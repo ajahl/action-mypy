@@ -7,7 +7,7 @@ cd "${GITHUB_WORKSPACE}/${INPUT_WORKDIR}" || exit
 TEMP_PATH="$(mktemp -d)"
 PATH="${TEMP_PATH}:$PATH"
 
-echo '::group::🐶 Installing reviewdog ... https://github.com/reviewdog/reviewdog'
+echo '::group::🐶 Installing reviewdog ... https://github.com/ajahl/reviewdog'
 curl -sfL https://raw.githubusercontent.com/ajahl/reviewdog/master/install.sh | sh -s -- -b "${TEMP_PATH}" "${REVIEWDOG_VERSION}" 2>&1
 echo '::endgroup::'
 
