@@ -34,6 +34,8 @@ echo '::group:: Running mypy with reviewdog 🐶 ...'
 mypy_exit_val="0"
 reviewdog_exit_val="0"
 
+echo "Starting MyPy Checks ....." 
+
 # shellcheck disable=SC2086
 mypy_check_output="$(mypy --show-column-numbers     \
                           --show-absolute-path      \
