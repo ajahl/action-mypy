@@ -43,6 +43,8 @@ mypy_check_output="$(mypy --show-column-numbers     \
                           "${INPUT_TARGET:-.}" 2>&1 \
                           )" || mypy_exit_val="$?"
 
+echo "Starting MyPy Checks end" 
+
 echo "${mypy_check_output}" 
 
 # shellcheck disable=SC2086
